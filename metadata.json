@@ -1,0 +1,5 @@
+{
+  "name": "Ophthalmology AI Research Agent",
+  "description": "An AI-powered application that emulates an experienced ophthalmologist to provide structured clinical analysis, validated evidence, and informed decisions.",
+  "requestFramePermissions": []
+}
