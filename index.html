@@ -6,19 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ophthalmology AI Research Agent</title>
     <script src="https://cdn.tailwindcss.com"></script>
-<script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.544.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
-    "remark-gfm": "https://aistudiocdn.com/remark-gfm@^4.0.1",
-    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0"
-  }
-}
-</script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'gradient-x': 'gradient-x 15s ease infinite',
+                        'fade-in-up': 'fade-in-up 0.8s ease-out',
+                        'fade-in-right': 'fade-in-right 0.8s ease-out',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'slide-in-left': 'slide-in-left 0.6s ease-out',
+                        'slide-in-right': 'slide-in-right 0.6s ease-out',
+                        'scale-in': 'scale-in 0.5s ease-out',
+                        'rotate-in': 'rotate-in 0.8s ease-out',
+                    },
+                    keyframes: {
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            }
+                        },
+                        'fade-in-up': {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'translateY(30px)'
+                            },
+                            '100%': {
+                                opacity: '1',
+                                transform: 'translateY(0)'
+                            }
+                        },
+                        'float': {
+                            '0%, 100%': {
+                                transform: 'translateY(0px)'
+                            },
+                            '50%': {
+                                transform: 'translateY(-20px)'
+                            }
+                        },
+                        'glow': {
+                            '0%': {
+                                boxShadow: '0 0 5px rgba(59, 130, 246, 0.5)'
+                            },
+                            '100%': {
+                                boxShadow: '0 0 20px rgba(59, 130, 246, 0.8)'
+                            }
+                        },
+                        'fade-in-right': {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'translateX(30px)'
+                            },
+                            '100%': {
+                                opacity: '1',
+                                transform: 'translateX(0)'
+                            }
+                        },
+                        'slide-in-left': {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'translateX(-50px)'
+                            },
+                            '100%': {
+                                opacity: '1',
+                                transform: 'translateX(0)'
+                            }
+                        },
+                        'slide-in-right': {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'translateX(50px)'
+                            },
+                            '100%': {
+                                opacity: '1',
+                                transform: 'translateX(0)'
+                            }
+                        },
+                        'scale-in': {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'scale(0.8)'
+                            },
+                            '100%': {
+                                opacity: '1',
+                                transform: 'scale(1)'
+                            }
+                        },
+                        'rotate-in': {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'rotate(-10deg) scale(0.8)'
+                            },
+                            '100%': {
+                                opacity: '1',
+                                transform: 'rotate(0deg) scale(1)'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .animation-delay-100 { animation-delay: 0.1s; }
+        .animation-delay-200 { animation-delay: 0.2s; }
+        .animation-delay-300 { animation-delay: 0.3s; }
+        .animation-delay-500 { animation-delay: 0.5s; }
+        .animation-delay-700 { animation-delay: 0.7s; }
+        .animation-delay-1000 { animation-delay: 1s; }
+        .animation-delay-1500 { animation-delay: 1.5s; }
+        .animation-delay-2000 { animation-delay: 2s; }
+        .animation-delay-3000 { animation-delay: 3s; }
+        .animation-delay-4000 { animation-delay: 4s; }
+    </style>
+    <script type="module" src="/index.tsx"></script>
 </head>
 <body class="bg-zinc-900 text-zinc-200 antialiased">
     <div id="root"></div>
