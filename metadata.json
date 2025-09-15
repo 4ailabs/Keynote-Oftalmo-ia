@@ -1,5 +1,9 @@
 {
   "name": "Ophthalmology AI Research Agent",
   "description": "An AI-powered application that emulates an experienced ophthalmologist to provide structured clinical analysis, validated evidence, and informed decisions.",
+  "developer": "4ailabs",
+  "developerWebsite": "https://4ailabs.vercel.app",
+  "developerDescription": "Especialistas en creación de agentes de IA para empresas y emprendedores",
+  "organization": "Grupo de Investigación de IA",
   "requestFramePermissions": []
 }
