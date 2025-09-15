@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Ophthalmology AI Research Agent</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -125,6 +125,48 @@
         .animation-delay-2000 { animation-delay: 2s; }
         .animation-delay-3000 { animation-delay: 3s; }
         .animation-delay-4000 { animation-delay: 4s; }
+
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            /* Reduce animations for better performance */
+            .animate-gradient-x,
+            .animate-float,
+            .animate-glow,
+            .animate-ping {
+                animation-duration: 3s !important;
+            }
+
+            /* Better touch targets */
+            button, a {
+                min-height: 44px;
+                min-width: 44px;
+            }
+
+            /* Prevent zoom on inputs */
+            input, select, textarea {
+                font-size: 16px !important;
+            }
+
+            /* Better scrolling */
+            body {
+                -webkit-overflow-scrolling: touch;
+                overscroll-behavior: contain;
+            }
+
+            /* Tap highlights */
+            * {
+                -webkit-tap-highlight-color: rgba(59, 130, 246, 0.1);
+            }
+        }
+
+        /* Performance improvements for mobile */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
     </style>
     <script type="module" src="/index.tsx"></script>
 </head>

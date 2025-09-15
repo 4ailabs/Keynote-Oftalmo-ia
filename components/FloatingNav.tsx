@@ -57,29 +57,29 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({ sections, activeSectio
             </nav>
 
             {/* Mobile Navigation */}
-            <nav className="lg:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
+            <nav className="lg:hidden fixed bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-50">
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className="bg-black/80 border border-zinc-700 rounded-full p-3 backdrop-blur-md hover:bg-black/90 hover:border-zinc-600 transition-all duration-300"
+                    className="bg-black/80 border border-zinc-700 rounded-full p-3 sm:p-3.5 backdrop-blur-md hover:bg-black/90 hover:border-zinc-600 transition-all duration-300 min-h-[50px] min-w-[50px] flex items-center justify-center"
                     aria-label="Toggle navigation menu"
                 >
                     {isMobileMenuOpen ? (
-                        <X size={20} className="text-zinc-200" />
+                        <X size={18} className="sm:w-5 sm:h-5 text-zinc-200" />
                     ) : (
-                        <Menu size={20} className="text-zinc-200" />
+                        <Menu size={18} className="sm:w-5 sm:h-5 text-zinc-200" />
                     )}
                 </button>
 
                 {/* Mobile Menu Dropdown */}
                 {isMobileMenuOpen && (
-                    <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-black/90 border border-zinc-700 rounded-xl p-4 backdrop-blur-md min-w-[200px]">
-                        <ul className="space-y-2">
+                    <div className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 bg-black/90 border border-zinc-700 rounded-xl p-3 sm:p-4 backdrop-blur-md min-w-[220px] max-w-[90vw]">
+                        <ul className="space-y-1 sm:space-y-2">
                             {sections.map((sectionId) => (
                                 <li key={sectionId}>
                                     <button
                                         onClick={() => handleMobileNavigate(sectionId)}
-                                        className={`w-full text-left px-3 py-2 rounded-lg transition-all duration-300 text-sm ${
+                                        className={`w-full text-left px-3 py-2.5 sm:py-2 rounded-lg transition-all duration-300 text-sm min-h-[44px] flex items-center ${
                                             activeSection === sectionId
                                                 ? 'bg-blue-600 text-white'
                                                 : 'text-zinc-300 hover:bg-zinc-800 hover:text-white'
