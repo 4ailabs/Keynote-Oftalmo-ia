@@ -64,52 +64,30 @@ export const TechnologySection = forwardRef<HTMLElement>((props, ref) => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="bg-gradient-to-br from-zinc-900 via-blue-950/20 to-zinc-900 border border-zinc-800 rounded-3xl p-8 sm:p-16">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-4">Tecnología Médica Avanzada</h2>
-                        <p className="text-xl text-zinc-400">Arquitectura especializada diseñada específicamente para el razonamiento clínico oftalmológico</p>
+                        <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-4">Arquitectura del Sistema</h2>
+                        <p className="text-xl text-zinc-400">Componentes técnicos especializados para razonamiento clínico oftalmológico avanzado</p>
                     </div>
-                    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-                        <TechItem 
+                    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                        <TechItem
                             icon={<Dna size={28} />}
                             title="Motor de Razonamiento Bayesiano"
-                            description="Sistema avanzado que actualiza probabilidades diagnósticas en tiempo real, considerando nueva evidencia y correlaciones clínicas específicas de oftalmología."
+                            description="Sistema que actualiza probabilidades diagnósticas considerando nueva evidencia y correlaciones clínicas específicas de oftalmología."
                             specs={[
-                                "Algoritmos de inferencia probabilística especializada",
+                                "Algoritmos de inferencia probabilística",
                                 "Base de conocimiento con 2,000+ correlaciones",
                                 "Actualización dinámica de probabilidades",
                                 "Integración de likelihood ratios específicos"
                             ]}
                         />
-                        <TechItem 
-                            icon={<Search size={28} />}
-                            title="Sistema de Validación de Fuentes"
-                            description="Evaluación automática de autoridad médica que garantiza que solo evidencia de la más alta calidad sea considerada en el proceso de análisis."
-                            specs={[
-                                "Scoring automático basado en 15+ criterios",
-                                "Verificación de factor de impacto y autoridad",
-                                "Detección de sesgos y conflictos de interés",
-                                "Filtrado por fecha y relevancia"
-                            ]}
-                        />
-                        <TechItem 
+                        <TechItem
                             icon={<Zap size={28} />}
                             title="Detección de Signos de Alarma"
-                            description="Algoritmos especializados que identifican automáticamente red flags oftalmológicos que requieren evaluación y tratamiento inmediatos."
+                            description="Algoritmos que identifican automáticamente red flags oftalmológicos que requieren evaluación y tratamiento inmediatos."
                             specs={[
                                 "Base de datos con 200+ signos de alarma",
                                 "Clasificación por urgencia y gravedad",
-                                "Alertas automáticas para condiciones tiempo-dependientes",
+                                "Alertas automáticas tiempo-dependientes",
                                 "Integración con protocolos de emergencia"
-                            ]}
-                        />
-                        <TechItem 
-                            icon={<BarChart3 size={28} />}
-                            title="Análisis Diferencial Inteligente"
-                            description="Evaluación sistemática de diagnósticos diferenciales con cálculo automatizado de probabilidades y análisis de evidencia a favor y en contra."
-                            specs={[
-                                "Matriz de diagnósticos por síntoma",
-                                "Cálculo de sensitivity y specificity",
-                                "Análisis de cost-effectiveness",
-                                "Recomendaciones de secuencia diagnóstica"
                             ]}
                         />
                     </div>

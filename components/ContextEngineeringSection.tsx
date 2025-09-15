@@ -57,12 +57,41 @@ ${step1ResultContent}
     return (
         <section ref={ref} id="context-engineering" className="py-24 sm:py-32 bg-zinc-950/50">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center max-w-3xl mx-auto mb-16">
+                <div className="text-center max-w-4xl mx-auto mb-16">
                     <div className="inline-block bg-blue-950/50 border border-blue-700 rounded-full p-3 mb-4">
                         <BrainCircuit className="w-8 h-8 text-blue-400" />
                     </div>
-                    <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-4">Context Engineering in Action</h2>
-                    <p className="text-xl text-zinc-400">Así es como el agente mantiene una "memoria" coherente durante toda la investigación, construyendo conocimiento paso a paso.</p>
+                    <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-4">Fuentes Médicas Validadas</h2>
+                    <p className="text-xl text-zinc-400">Sistema que prioriza y valida automáticamente fuentes médicas especializadas, garantizando evidencia de alta calidad en cada análisis.</p>
+
+                    {/* Medical Sources Grid */}
+                    <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+                        <div className="bg-zinc-900/30 border border-zinc-800 rounded-lg p-4 text-center">
+                            <div className="text-2xl font-bold text-blue-400 mb-1">1°</div>
+                            <div className="text-sm font-medium text-zinc-200 mb-1">Revisiones Sistemáticas</div>
+                            <div className="text-xs text-zinc-400">Cochrane, PubMed</div>
+                        </div>
+                        <div className="bg-zinc-900/30 border border-zinc-800 rounded-lg p-4 text-center">
+                            <div className="text-2xl font-bold text-cyan-400 mb-1">2°</div>
+                            <div className="text-sm font-medium text-zinc-200 mb-1">Ensayos Clínicos</div>
+                            <div className="text-xs text-zinc-400">ClinicalTrials.gov</div>
+                        </div>
+                        <div className="bg-zinc-900/30 border border-zinc-800 rounded-lg p-4 text-center">
+                            <div className="text-2xl font-bold text-green-400 mb-1">3°</div>
+                            <div className="text-sm font-medium text-zinc-200 mb-1">Guías Clínicas</div>
+                            <div className="text-xs text-zinc-400">AAO, ESCRS</div>
+                        </div>
+                        <div className="bg-zinc-900/30 border border-zinc-800 rounded-lg p-4 text-center">
+                            <div className="text-2xl font-bold text-yellow-400 mb-1">4°</div>
+                            <div className="text-sm font-medium text-zinc-200 mb-1">Revistas Indexadas</div>
+                            <div className="text-xs text-zinc-400">JAMA, Lancet, NEJM</div>
+                        </div>
+                        <div className="bg-zinc-900/30 border border-zinc-800 rounded-lg p-4 text-center">
+                            <div className="text-2xl font-bold text-purple-400 mb-1">5°</div>
+                            <div className="text-sm font-medium text-zinc-200 mb-1">Bases Autoridad</div>
+                            <div className="text-xs text-zinc-400">UpToDate, Medscape</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-8 items-start">

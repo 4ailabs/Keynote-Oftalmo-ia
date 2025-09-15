@@ -48,8 +48,8 @@ export const PhasesSection = forwardRef<HTMLElement>((props, ref) => {
         <section ref={ref} id="phases" className="py-16 sm:py-20 md:py-24 lg:py-32">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 md:mb-20">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100 mb-3 sm:mb-4 px-2">Tres fases. Un objetivo.</h2>
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-400 px-3 sm:px-6 leading-relaxed">Un proceso de razonamiento clínico sistemático que combina análisis bayesiano, evidencia médica y experiencia especializada.</p>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100 mb-3 sm:mb-4 px-2">Metodología de 3 Fases</h2>
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-400 px-3 sm:px-6 leading-relaxed">Proceso sistemático de razonamiento clínico que integra análisis bayesiano, evidencia médica validada y experiencia especializada en oftalmología.</p>
                 </div>
 
                 <div className="space-y-16 sm:space-y-20 md:space-y-24">

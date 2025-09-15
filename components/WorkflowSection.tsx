@@ -55,14 +55,13 @@ export const WorkflowSection = forwardRef<HTMLElement>((props, ref) => {
     return (
         <section ref={ref} id="workflow" className="py-24 sm:py-32">
             <div className="max-w-7xl mx-auto px-6">
+                <div className="text-center max-w-4xl mx-auto mb-16">
+                    <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-4">Pasos del Proceso de Análisis</h2>
+                    <p className="text-xl text-zinc-400">Desglose detallado de los 8 pasos que ejecuta el sistema durante cada análisis clínico.</p>
+                </div>
                  <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 sm:p-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-tr from-blue-950/20 via-transparent to-transparent opacity-50"></div>
                     <div className="relative z-10">
-                        <div className="text-center max-w-3xl mx-auto mb-16">
-                            <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-4">Flujo de Trabajo Detallado</h2>
-                            <p className="text-xl text-zinc-400">Cada paso del proceso está diseñado para maximizar la precisión y eficiencia del análisis clínico</p>
-                        </div>
-
                         <div className="relative">
                              <div className="absolute left-10 md:left-[3.2rem] top-0 bottom-0 w-0.5 bg-zinc-700/50 hidden md:block"></div>
                              <div className="space-y-16">

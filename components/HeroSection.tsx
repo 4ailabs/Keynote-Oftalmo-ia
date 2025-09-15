@@ -35,7 +35,7 @@ export const HeroSection = forwardRef<HTMLElement, HeroSectionProps>(({ scrollTo
                 
                 {/* Animated subtitle */}
                 <p className={`max-w-3xl mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-zinc-400 mb-6 sm:mb-8 md:mb-12 px-3 sm:px-4 leading-relaxed transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
-                    Inteligencia artificial que piensa como un oftalmólogo experimentado. Análisis clínico estructurado, evidencia validada, decisiones fundamentadas.
+                    Agente de investigación clínica que ejecuta análisis sistemáticos en minutos, validando evidencia médica especializada en oftalmología.
                 </p>
                 
                 {/* Animated buttons */}

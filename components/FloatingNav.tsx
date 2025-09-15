@@ -13,13 +13,13 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({ sections, activeSectio
     
     const sectionLabels: { [key: string]: string } = {
         hero: 'Inicio',
-        intro: 'Introducción',
-        phases: 'Fases',
-        technology: 'Tecnología',
-        workflow: 'Flujo de Trabajo',
-        'context-engineering': 'Context Engineering',
+        intro: 'Sistema',
+        phases: 'Metodología',
+        technology: 'Arquitectura',
+        workflow: 'Proceso',
+        'context-engineering': 'Fuentes',
         features: 'Características',
-        stats: 'Resultados',
+        stats: 'Métricas',
     };
 
     const handleMobileNavigate = (sectionId: string) => {
