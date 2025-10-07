@@ -4,6 +4,7 @@ import { MacApproachesSection } from './components/MacApproachesSection';
 import { MacPerformanceSection } from './components/MacPerformanceSection';
 import { MacInstallationSection } from './components/MacInstallationSection';
 import { MacSecuritySection } from './components/MacSecuritySection';
+import { MacFunctionalitySection } from './components/MacFunctionalitySection';
 import { Footer } from './components/Footer';
 import { FloatingNav } from './components/FloatingNav';
 
@@ -11,6 +12,7 @@ export default function MacApp() {
     const heroRef = useRef<HTMLElement>(null);
     const approachesRef = useRef<HTMLElement>(null);
     const performanceRef = useRef<HTMLElement>(null);
+    const functionalityRef = useRef<HTMLElement>(null);
     const installationRef = useRef<HTMLElement>(null);
     const securityRef = useRef<HTMLElement>(null);
 
@@ -18,6 +20,7 @@ export default function MacApp() {
         hero: heroRef,
         approaches: approachesRef,
         performance: performanceRef,
+        functionality: functionalityRef,
         installation: installationRef,
         security: securityRef
     };
@@ -26,6 +29,7 @@ export default function MacApp() {
         { id: 'hero', label: 'Inicio', ref: heroRef },
         { id: 'approaches', label: 'Enfoques', ref: approachesRef },
         { id: 'performance', label: 'Rendimiento', ref: performanceRef },
+        { id: 'functionality', label: 'Funcionalidades', ref: functionalityRef },
         { id: 'installation', label: 'Instalación', ref: installationRef },
         { id: 'security', label: 'Seguridad', ref: securityRef }
     ];
@@ -45,6 +49,7 @@ export default function MacApp() {
             <MacHeroSection scrollToSection={scrollToSection} ref={heroRef} />
             <MacApproachesSection ref={approachesRef} />
             <MacPerformanceSection ref={performanceRef} />
+            <MacFunctionalitySection ref={functionalityRef} />
             <MacInstallationSection ref={installationRef} />
             <MacSecuritySection ref={securityRef} />
             <Footer />

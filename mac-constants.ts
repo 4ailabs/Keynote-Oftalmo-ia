@@ -264,3 +264,104 @@ export const ANONYMIZATION_PATTERNS = [
     { original: "Emails", anonymized: "[EMAIL]", example: "john@company.com → [EMAIL]" },
     { original: "Números de cuenta", anonymized: "[ACCOUNT_NUMBER]", example: "1234567890 → [ACCOUNT_NUMBER]" }
 ];
+
+export interface PracticalFeature {
+    icon: string;
+    title: string;
+    description: string;
+    benefit: string;
+    example: string;
+}
+
+export interface UseCase {
+    scenario: string;
+    problem: string;
+    solution: string;
+    result: string;
+    icon: string;
+}
+
+export const PRACTICAL_FEATURES: PracticalFeature[] = [
+    {
+        icon: "FileText",
+        title: "Análisis Instantáneo",
+        description: "Sube cualquier contrato PDF, DOCX o TXT y obtén análisis completo en segundos.",
+        benefit: "Ahorra horas de revisión manual",
+        example: "Contrato de 50 páginas analizado en 2.3 segundos"
+    },
+    {
+        icon: "Shield",
+        title: "Detección de Riesgos",
+        description: "Identifica automáticamente cláusulas problemáticas, tasas excesivas y términos desfavorables.",
+        benefit: "Protege tu empresa de riesgos ocultos",
+        example: "Detecta 6 riesgos críticos en un préstamo empresarial"
+    },
+    {
+        icon: "TrendingUp",
+        title: "Comparación de Términos",
+        description: "Compara múltiples contratos lado a lado para encontrar las mejores condiciones.",
+        benefit: "Toma decisiones más informadas",
+        example: "Compara 5 ofertas de seguros en segundos"
+    },
+    {
+        icon: "Clock",
+        title: "Alertas de Vencimiento",
+        description: "Recibe notificaciones automáticas antes de que venzan contratos importantes.",
+        benefit: "Nunca pierdas fechas críticas",
+        example: "Recordatorio 30 días antes del vencimiento"
+    },
+    {
+        icon: "Users",
+        title: "Análisis Colaborativo",
+        description: "Comparte análisis con tu equipo y obtén comentarios en tiempo real.",
+        benefit: "Mejora la colaboración del equipo",
+        example: "5 analistas revisando el mismo contrato simultáneamente"
+    },
+    {
+        icon: "BarChart3",
+        title: "Reportes Ejecutivos",
+        description: "Genera reportes profesionales listos para presentar a directivos.",
+        benefit: "Comunica hallazgos de manera clara",
+        example: "Dashboard ejecutivo con métricas clave"
+    }
+];
+
+export const USE_CASES: UseCase[] = [
+    {
+        scenario: "Banco Comercial",
+        problem: "Revisar 200 contratos de préstamos mensualmente",
+        solution: "Análisis automático en lote con detección de riesgos",
+        result: "Reducción del 80% en tiempo de revisión",
+        icon: "Building"
+    },
+    {
+        scenario: "Empresa de Seguros",
+        problem: "Validar pólizas contra regulaciones cambiantes",
+        solution: "Análisis de compliance automático",
+        result: "100% de cumplimiento regulatorio",
+        icon: "Shield"
+    },
+    {
+        scenario: "Departamento Legal",
+        problem: "Revisar contratos de proveedores rápidamente",
+        solution: "Análisis instantáneo con alertas de riesgo",
+        result: "Decisiones 10x más rápidas",
+        icon: "Scale"
+    },
+    {
+        scenario: "Auditoría Interna",
+        problem: "Identificar contratos con términos desfavorables",
+        solution: "Detección automática de patrones problemáticos",
+        result: "Identificación de $2M en ahorros potenciales",
+        icon: "Search"
+    }
+];
+
+export const CONTRACT_TYPES_SUPPORTED = [
+    { type: "Préstamos Bancarios", examples: "Créditos, hipotecas, líneas de crédito" },
+    { type: "Seguros", examples: "Vida, salud, automóvil, empresarial" },
+    { type: "Servicios Financieros", examples: "Tarjetas de crédito, inversiones" },
+    { type: "Contratos Empresariales", examples: "Proveedores, distribución, licencias" },
+    { type: "Leasing", examples: "Equipos, vehículos, inmuebles" },
+    { type: "Derivados Financieros", examples: "Swaps, opciones, futuros" }
+];
