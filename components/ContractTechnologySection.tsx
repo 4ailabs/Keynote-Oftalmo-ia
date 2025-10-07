@@ -95,14 +95,14 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({ name, description, capa
             <div className={`absolute inset-0 bg-gradient-to-r ${getGlowColor(name)} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
             
             <div className="relative z-10">
-                <div className={`group/icon w-24 h-24 mx-auto mb-6 bg-gradient-to-br ${getGradientColors(name)} rounded-2xl flex items-center justify-center text-white hover:scale-110 hover:rotate-12 transition-all duration-300 hover:shadow-2xl shadow-lg`}>
+                <div className={`group/icon w-32 h-32 mx-auto mb-8 bg-gradient-to-br ${getGradientColors(name)} rounded-3xl flex items-center justify-center text-white hover:scale-110 hover:rotate-12 transition-all duration-300 hover:shadow-2xl shadow-lg`}>
                     <div className="group-hover/icon:scale-110 transition-transform duration-300">
                         {icon}
                     </div>
                 </div>
                 
-                <h3 className="text-2xl font-semibold text-zinc-100 mb-4 transition-colors duration-300">{name}</h3>
-                <p className="text-zinc-400 mb-8 leading-relaxed">{description}</p>
+                <h3 className="text-3xl font-semibold text-zinc-100 mb-6 transition-colors duration-300">{name}</h3>
+                <p className="text-lg text-zinc-300 mb-10 leading-relaxed">{description}</p>
                 
                 <div className="bg-zinc-800/50 rounded-lg p-6 text-left hover:bg-zinc-800/70 transition-all duration-300 border border-transparent">
                     <h4 className="text-lg font-medium text-zinc-200 mb-4">Capacidades Principales:</h4>
@@ -124,9 +124,9 @@ export const ContractTechnologySection = forwardRef<HTMLElement>((props, ref) =>
     return (
         <section ref={ref} id="technology" className="py-32 sm:py-40">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-4">Tecnologías Integradas</h2>
-                    <p className="text-xl text-zinc-400">Combinación sinérgica de Claude SDK, FinBERT y GraphRAG para análisis contractual de máxima precisión</p>
+                <div className="text-center max-w-4xl mx-auto mb-20">
+                    <h2 className="text-5xl sm:text-6xl font-bold text-zinc-100 mb-6">Tecnologías Integradas</h2>
+                    <p className="text-xl sm:text-2xl text-zinc-300 leading-relaxed">Combinación sinérgica de Claude SDK, FinBERT y GraphRAG para análisis contractual de máxima precisión</p>
                 </div>
                 
                 <div className="grid lg:grid-cols-3 gap-8 mb-16">

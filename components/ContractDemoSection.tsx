@@ -55,40 +55,40 @@ export const ContractDemoSection = forwardRef<HTMLElement>((props, ref) => {
     return (
         <section ref={ref} id="demo" className="py-32 sm:py-40">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-4">Ejemplo de Análisis</h2>
-                    <p className="text-xl text-zinc-400">Demostración práctica de cómo el sistema identifica y clasifica riesgos en contratos financieros</p>
+                <div className="text-center max-w-4xl mx-auto mb-20">
+                    <h2 className="text-5xl sm:text-6xl font-bold text-zinc-100 mb-6">Ejemplo de Análisis</h2>
+                    <p className="text-xl sm:text-2xl text-zinc-300 leading-relaxed">Demostración práctica de cómo el sistema identifica y clasifica riesgos en contratos financieros</p>
                 </div>
 
                 {/* Demo interface mockup */}
                 <div className={`bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8 lg:p-12 mb-16 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                    <div className="flex items-center gap-4 mb-8">
-                        <div className="w-12 h-12 bg-green-600/20 rounded-xl flex items-center justify-center">
-                            <Play size={24} className="text-green-400" />
+                    <div className="flex items-center gap-6 mb-10">
+                        <div className="w-16 h-16 bg-green-600/20 rounded-xl flex items-center justify-center animate-pulse">
+                            <Play size={32} className="text-green-400" />
                         </div>
                         <div>
-                            <h3 className="text-2xl font-semibold text-zinc-100">Contrato de Préstamo Personal</h3>
-                            <p className="text-zinc-400">Análisis completado en 2.3 segundos</p>
+                            <h3 className="text-3xl font-semibold text-zinc-100 mb-2">Contrato de Préstamo Personal</h3>
+                            <p className="text-lg text-zinc-300">Análisis completado en 2.3 segundos</p>
                         </div>
                     </div>
 
                     {/* Risk summary */}
-                    <div className="grid md:grid-cols-4 gap-4 mb-8">
-                        <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 text-center">
-                            <div className="text-2xl font-bold text-red-400">1</div>
-                            <div className="text-sm text-red-300">Crítico</div>
+                    <div className="grid md:grid-cols-4 gap-6 mb-12">
+                        <div className="bg-red-900/30 border-2 border-red-500/50 rounded-xl p-6 text-center hover:scale-105 transition-all duration-300">
+                            <div className="text-4xl font-bold text-red-400 mb-2">1</div>
+                            <div className="text-lg font-semibold text-red-300">Crítico</div>
                         </div>
-                        <div className="bg-orange-900/20 border border-orange-500/30 rounded-lg p-4 text-center">
-                            <div className="text-2xl font-bold text-orange-400">2</div>
-                            <div className="text-sm text-orange-300">Alto</div>
+                        <div className="bg-orange-900/30 border-2 border-orange-500/50 rounded-xl p-6 text-center hover:scale-105 transition-all duration-300">
+                            <div className="text-4xl font-bold text-orange-400 mb-2">2</div>
+                            <div className="text-lg font-semibold text-orange-300">Alto</div>
                         </div>
-                        <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 text-center">
-                            <div className="text-2xl font-bold text-yellow-400">3</div>
-                            <div className="text-sm text-yellow-300">Medio</div>
+                        <div className="bg-yellow-900/30 border-2 border-yellow-500/50 rounded-xl p-6 text-center hover:scale-105 transition-all duration-300">
+                            <div className="text-4xl font-bold text-yellow-400 mb-2">3</div>
+                            <div className="text-lg font-semibold text-yellow-300">Medio</div>
                         </div>
-                        <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4 text-center">
-                            <div className="text-2xl font-bold text-green-400">0</div>
-                            <div className="text-sm text-green-300">Bajo</div>
+                        <div className="bg-green-900/30 border-2 border-green-500/50 rounded-xl p-6 text-center hover:scale-105 transition-all duration-300">
+                            <div className="text-4xl font-bold text-green-400 mb-2">0</div>
+                            <div className="text-lg font-semibold text-green-300">Bajo</div>
                         </div>
                     </div>
 

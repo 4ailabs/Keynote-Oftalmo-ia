@@ -35,10 +35,10 @@ export const ContractBrandingSection = forwardRef<HTMLElement>((props, ref) => {
                                 <div className="w-16 h-16 bg-gradient-to-br from-green-600 to-emerald-500 rounded-2xl flex items-center justify-center">
                                     <Bot size={32} className="text-white" />
                                 </div>
-                                <div className="text-left">
-                                    <h2 className="text-3xl sm:text-4xl font-bold text-zinc-100 mb-2">Desarrollado por 4ailabs</h2>
-                                    <p className="text-lg text-zinc-400">Especialistas en creación de agentes de IA especializados</p>
-                                </div>
+                            <div className="text-left">
+                                <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-3">Desarrollado por 4ailabs</h2>
+                                <p className="text-xl text-zinc-300">Especialistas en creación de agentes de IA especializados</p>
+                            </div>
                             </div>
                             
                             <div className="grid md:grid-cols-2 gap-8 mb-12">

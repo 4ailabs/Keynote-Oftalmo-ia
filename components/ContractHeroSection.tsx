@@ -43,14 +43,14 @@ export const ContractHeroSection = forwardRef<HTMLElement, ContractHeroSectionPr
                 </div>
 
                 {/* Animated title with typewriter effect */}
-                <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tighter mb-3 sm:mb-4 md:mb-6 bg-gradient-to-r from-green-500 to-emerald-400 bg-clip-text text-transparent animate-gradient-x px-2 sm:px-0">
+                <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tighter mb-4 sm:mb-6 md:mb-8 bg-gradient-to-r from-green-500 to-emerald-400 bg-clip-text text-transparent animate-gradient-x px-2 sm:px-0">
                     <span className="inline-block animate-fade-in-up animation-delay-500">Agente de Análisis</span>
                     <br />
                     <span className="inline-block animate-fade-in-up animation-delay-1000">de Contratos</span>
                 </h1>
                 
                 {/* Animated subtitle */}
-                <p className={`max-w-3xl mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-zinc-400 mb-6 sm:mb-8 md:mb-12 px-3 sm:px-4 leading-relaxed transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
+                <p className={`max-w-4xl mx-auto text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-300 mb-8 sm:mb-10 md:mb-14 px-3 sm:px-4 leading-relaxed transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
                     Sistema de inteligencia artificial especializado en auditoría y análisis de contratos financieros, combinando Claude SDK + FinBERT + GraphRAG para identificar riesgos y detectar problemas de cumplimiento.
                 </p>
                 
@@ -71,32 +71,32 @@ export const ContractHeroSection = forwardRef<HTMLElement, ContractHeroSectionPr
                 </div>
 
                 {/* Key capabilities preview */}
-                <div className={`mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto transform transition-all duration-1000 delay-1300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
-                    <div className="flex items-center gap-3 bg-zinc-900/50 border border-zinc-800 rounded-lg p-4 hover:border-green-500/30 transition-all duration-300">
-                        <div className="w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center">
-                            <FileText size={20} className="text-green-400" />
+                <div className={`mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto transform transition-all duration-1000 delay-1300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
+                    <div className="flex items-center gap-4 bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-green-500/50 transition-all duration-300 hover:scale-105">
+                        <div className="w-12 h-12 bg-green-600/30 rounded-xl flex items-center justify-center">
+                            <FileText size={24} className="text-green-400" />
                         </div>
                         <div className="text-left">
-                            <p className="text-sm font-medium text-zinc-200">Análisis Completo</p>
-                            <p className="text-xs text-zinc-500">Riesgos financieros y legales</p>
+                            <p className="text-base font-semibold text-zinc-100">Análisis Completo</p>
+                            <p className="text-sm text-zinc-400">Riesgos financieros y legales</p>
                         </div>
                     </div>
-                    <div className="flex items-center gap-3 bg-zinc-900/50 border border-zinc-800 rounded-lg p-4 hover:border-blue-500/30 transition-all duration-300">
-                        <div className="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
-                            <Bot size={20} className="text-blue-400" />
+                    <div className="flex items-center gap-4 bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:scale-105">
+                        <div className="w-12 h-12 bg-blue-600/30 rounded-xl flex items-center justify-center">
+                            <Bot size={24} className="text-blue-400" />
                         </div>
                         <div className="text-left">
-                            <p className="text-sm font-medium text-zinc-200">IA Avanzada</p>
-                            <p className="text-xs text-zinc-500">Claude + FinBERT + GraphRAG</p>
+                            <p className="text-base font-semibold text-zinc-100">IA Avanzada</p>
+                            <p className="text-sm text-zinc-400">Claude + FinBERT + GraphRAG</p>
                         </div>
                     </div>
-                    <div className="flex items-center gap-3 bg-zinc-900/50 border border-zinc-800 rounded-lg p-4 hover:border-purple-500/30 transition-all duration-300">
-                        <div className="w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center">
-                            <Network size={20} className="text-purple-400" />
+                    <div className="flex items-center gap-4 bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:scale-105">
+                        <div className="w-12 h-12 bg-purple-600/30 rounded-xl flex items-center justify-center">
+                            <Network size={24} className="text-purple-400" />
                         </div>
                         <div className="text-left">
-                            <p className="text-sm font-medium text-zinc-200">Grafos de Conocimiento</p>
-                            <p className="text-xs text-zinc-500">Análisis estructural</p>
+                            <p className="text-base font-semibold text-zinc-100">Grafos de Conocimiento</p>
+                            <p className="text-sm text-zinc-400">Análisis estructural</p>
                         </div>
                     </div>
                 </div>
