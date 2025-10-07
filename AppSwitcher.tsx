@@ -8,6 +8,7 @@ const AppSwitcher: React.FC = () => {
     const [currentApp, setCurrentApp] = useState<'ophthalmology' | 'contracts' | 'mac'>('ophthalmology');
 
     const switchToApp = (app: 'ophthalmology' | 'contracts' | 'mac') => {
+        console.log('Switching to app:', app);
         setCurrentApp(app);
     };
 
