@@ -41,13 +41,31 @@ const RiskCategory: React.FC<RiskCategoryProps> = ({ category, icon, color }) =>
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
         >
-            <div className={`absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-${color}-500 to-${color}-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500`}></div>
+            <div className={`absolute top-0 left-0 h-1 w-full transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ${
+                color === 'critical' ? 'bg-gradient-to-r from-red-500 to-red-400' :
+                color === 'high' ? 'bg-gradient-to-r from-orange-500 to-orange-400' :
+                color === 'medium' ? 'bg-gradient-to-r from-yellow-500 to-yellow-400' :
+                color === 'low' ? 'bg-gradient-to-r from-green-500 to-green-400' :
+                'bg-gradient-to-r from-zinc-500 to-zinc-400'
+            }`}></div>
             
             {/* Animated background glow */}
-            <div className={`absolute inset-0 bg-gradient-to-r from-${color}-500/5 to-${color}-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+            <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                color === 'critical' ? 'bg-gradient-to-r from-red-500/5 to-red-400/5' :
+                color === 'high' ? 'bg-gradient-to-r from-orange-500/5 to-orange-400/5' :
+                color === 'medium' ? 'bg-gradient-to-r from-yellow-500/5 to-yellow-400/5' :
+                color === 'low' ? 'bg-gradient-to-r from-green-500/5 to-green-400/5' :
+                'bg-gradient-to-r from-zinc-500/5 to-zinc-400/5'
+            }`}></div>
             
             <div className="relative z-10 flex flex-col h-full">
-                <div className={`group/icon w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-${color}-600 to-${color}-500 rounded-xl flex items-center justify-center text-white hover:scale-110 hover:rotate-12 transition-all duration-300 hover:shadow-2xl hover:shadow-${color}-500/30`}>
+                <div className={`group/icon w-20 h-20 mx-auto mb-6 rounded-xl flex items-center justify-center text-white hover:scale-110 hover:rotate-12 transition-all duration-300 hover:shadow-2xl ${
+                    color === 'critical' ? 'bg-gradient-to-br from-red-600 to-red-500 hover:shadow-red-500/30' :
+                    color === 'high' ? 'bg-gradient-to-br from-orange-600 to-orange-500 hover:shadow-orange-500/30' :
+                    color === 'medium' ? 'bg-gradient-to-br from-yellow-600 to-yellow-500 hover:shadow-yellow-500/30' :
+                    color === 'low' ? 'bg-gradient-to-br from-green-600 to-green-500 hover:shadow-green-500/30' :
+                    'bg-gradient-to-br from-zinc-600 to-zinc-500 hover:shadow-zinc-500/30'
+                }`}>
                     <div className="group-hover/icon:scale-110 transition-transform duration-300">
                         {icon}
                     </div>

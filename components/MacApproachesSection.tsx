@@ -94,10 +94,20 @@ const ApproachCard: React.FC<ApproachCardProps> = ({ approach }) => {
             <div className={`absolute top-0 left-0 h-1 w-full bg-gradient-to-r ${getGradientColors(approach.color)} transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500`}></div>
             
             {/* Animated background glow */}
-            <div className={`absolute inset-0 bg-gradient-to-r from-${approach.color}-500/5 to-${approach.color}-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+            <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                approach.color === 'blue' ? 'bg-gradient-to-r from-blue-500/5 to-blue-400/5' :
+                approach.color === 'green' ? 'bg-gradient-to-r from-green-500/5 to-green-400/5' :
+                approach.color === 'purple' ? 'bg-gradient-to-r from-purple-500/5 to-purple-400/5' :
+                'bg-gradient-to-r from-zinc-500/5 to-zinc-400/5'
+            }`}></div>
             
             <div className="relative z-10 flex flex-col h-full">
-                <div className={`group/icon w-24 h-24 mx-auto mb-8 bg-gradient-to-br ${getGradientColors(approach.color)} rounded-2xl flex items-center justify-center text-white hover:scale-110 hover:rotate-12 transition-all duration-300 hover:shadow-2xl hover:shadow-${approach.color}-500/30`}>
+                <div className={`group/icon w-24 h-24 mx-auto mb-8 bg-gradient-to-br ${getGradientColors(approach.color)} rounded-2xl flex items-center justify-center text-white hover:scale-110 hover:rotate-12 transition-all duration-300 hover:shadow-2xl ${
+                    approach.color === 'blue' ? 'hover:shadow-blue-500/30' :
+                    approach.color === 'green' ? 'hover:shadow-green-500/30' :
+                    approach.color === 'purple' ? 'hover:shadow-purple-500/30' :
+                    'hover:shadow-zinc-500/30'
+                }`}>
                     <div className="group-hover/icon:scale-110 transition-transform duration-300">
                         {getIconComponent(approach.icon)}
                     </div>
