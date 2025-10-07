@@ -189,7 +189,7 @@ export const MacApproachesSection = forwardRef<HTMLElement>((props, ref) => {
                             <div className="w-16 h-16 bg-purple-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                                 <Shield size={24} className="text-purple-400" />
                             </div>
-                            <h4 className="text-lg font-semibold text-zinc-100 mb-2">Memoria Baja (<4GB)</h4>
+                            <h4 className="text-lg font-semibold text-zinc-100 mb-2">Memoria Baja (&lt;4GB)</h4>
                             <p className="text-sm text-zinc-400">Enfoque Híbrido para eficiencia máxima</p>
                         </div>
                     </div>
