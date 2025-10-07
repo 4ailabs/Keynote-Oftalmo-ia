@@ -48,7 +48,7 @@ export default function MacApp() {
             <MacInstallationSection ref={installationRef} />
             <MacSecuritySection ref={securityRef} />
             <Footer />
-            <FloatingNav sections={sections} />
+            <FloatingNav sections={sections.map(s => s.id)} activeSection="hero" onNavigate={scrollToSection} />
         </div>
     );
 }
