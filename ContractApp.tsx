@@ -4,6 +4,9 @@ import { ContractFeaturesSection } from './components/ContractFeaturesSection';
 import { ContractTechnologySection } from './components/ContractTechnologySection';
 import { ContractWorkflowSection } from './components/ContractWorkflowSection';
 import { ContractRiskAnalysisSection } from './components/ContractRiskAnalysisSection';
+import { ContractPerformanceSection } from './components/ContractPerformanceSection';
+import { ContractBusinessCasesSection } from './components/ContractBusinessCasesSection';
+import { ContractCompetitiveAdvantagesSection } from './components/ContractCompetitiveAdvantagesSection';
 import { ContractDemoSection } from './components/ContractDemoSection';
 import { ContractBrandingSection } from './components/ContractBrandingSection';
 import { Footer } from './components/Footer';
@@ -17,6 +20,9 @@ const ContractApp: React.FC = () => {
         technology: useRef<HTMLElement>(null),
         workflow: useRef<HTMLElement>(null),
         'risk-analysis': useRef<HTMLElement>(null),
+        performance: useRef<HTMLElement>(null),
+        'business-cases': useRef<HTMLElement>(null),
+        'competitive-advantages': useRef<HTMLElement>(null),
         demo: useRef<HTMLElement>(null),
         branding: useRef<HTMLElement>(null),
     };
@@ -27,6 +33,9 @@ const ContractApp: React.FC = () => {
         'technology', 
         'workflow', 
         'risk-analysis',
+        'performance',
+        'business-cases',
+        'competitive-advantages',
         'demo',
         'branding'
     ];
@@ -70,6 +79,9 @@ const ContractApp: React.FC = () => {
                 <ContractTechnologySection ref={sectionRefs.technology} />
                 <ContractWorkflowSection ref={sectionRefs.workflow} />
                 <ContractRiskAnalysisSection ref={sectionRefs['risk-analysis']} />
+                <ContractPerformanceSection ref={sectionRefs.performance} />
+                <ContractBusinessCasesSection ref={sectionRefs['business-cases']} />
+                <ContractCompetitiveAdvantagesSection ref={sectionRefs['competitive-advantages']} />
                 <ContractDemoSection ref={sectionRefs.demo} />
                 <ContractBrandingSection ref={sectionRefs.branding} />
             </main>
