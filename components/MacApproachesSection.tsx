@@ -154,9 +154,9 @@ export const MacApproachesSection = forwardRef<HTMLElement>((props, ref) => {
         <section ref={ref} id="approaches" className="py-32 sm:py-40">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center max-w-4xl mx-auto mb-20">
-                    <h2 className="text-5xl sm:text-6xl font-bold text-zinc-100 mb-6">Tres Enfoques Adaptativos</h2>
+                    <h2 className="text-5xl sm:text-6xl font-bold text-zinc-100 mb-6">Ollama Local + FinBERT</h2>
                     <p className="text-xl sm:text-2xl text-zinc-300 leading-relaxed">
-                        Selección automática del mejor enfoque según memoria disponible y tipo de análisis para tu Mac con 18GB RAM
+                        Tres formas de analizar contratos usando Ollama y FinBERT en tu Mac, adaptándose automáticamente a tu memoria disponible
                     </p>
                 </div>
                 

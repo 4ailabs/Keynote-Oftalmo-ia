@@ -158,9 +158,9 @@ export const MacFunctionalitySection = forwardRef<HTMLElement>((props, ref) => {
         <section ref={ref} id="functionality" className="py-32 sm:py-40">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center max-w-4xl mx-auto mb-20">
-                    <h2 className="text-5xl sm:text-6xl font-bold text-zinc-100 mb-6">Funcionalidades Prácticas</h2>
+                    <h2 className="text-5xl sm:text-6xl font-bold text-zinc-100 mb-6">Cómo Funciona</h2>
                     <p className="text-xl sm:text-2xl text-zinc-300 leading-relaxed">
-                        Herramientas diseñadas para simplificar el análisis de contratos en tu día a día
+                        Ollama y FinBERT trabajando juntos en tu Mac para analizar contratos de forma local y segura
                     </p>
                 </div>
                 
@@ -176,7 +176,7 @@ export const MacFunctionalitySection = forwardRef<HTMLElement>((props, ref) => {
                 {/* Use Cases Section */}
                 <div className="bg-gradient-to-r from-zinc-900/50 to-zinc-800/50 border border-zinc-700 rounded-2xl p-8 lg:p-12 mb-20">
                     <div className="text-center mb-12">
-                        <h3 className="text-3xl font-bold text-zinc-100 mb-4">Casos de Uso Reales</h3>
+                        <h3 className="text-3xl font-bold text-zinc-100 mb-4">Casos de Uso Simples</h3>
                         <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
                             Ejemplos de cómo empresas están usando el analizador para optimizar sus procesos
                         </p>

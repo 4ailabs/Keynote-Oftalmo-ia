@@ -35,19 +35,19 @@ export interface InstallationStep {
 
 export const MAC_APPROACHES: MacApproach[] = [
     {
-        name: "Pipeline Optimizado",
-        description: "FinBERT + Llama 8B para máxima precisión con gestión inteligente de memoria.",
+        name: "Ollama Local + FinBERT",
+        description: "Análisis completo usando Ollama con modelos locales y FinBERT para detección de riesgos financieros.",
         precision: "95%",
         ramUsage: "8-12GB",
-        speed: "150-300 contratos/hora",
-        idealFor: ["Contratos críticos", "Análisis de alta precisión", "Decisiones importantes"],
+        speed: "Rápido",
+        idealFor: ["Análisis completo", "Máxima precisión", "Privacidad total"],
         icon: "Zap",
         color: "blue"
     },
     {
-        name: "Stack Ligero",
-        description: "FinBERT + modelos especializados optimizados para eficiencia de memoria.",
-        precision: "93%",
+        name: "Solo FinBERT",
+        description: "Análisis enfocado en riesgos financieros usando únicamente FinBERT optimizado.",
+        precision: "90%",
         ramUsage: "4-6GB",
         speed: "400-600 contratos/hora",
         idealFor: ["Análisis en lote", "Procesamiento masivo", "Memoria limitada"],
@@ -55,12 +55,12 @@ export const MAC_APPROACHES: MacApproach[] = [
         color: "green"
     },
     {
-        name: "Enfoque Híbrido",
-        description: "Análisis local con API externa opcional y anonimización automática.",
-        precision: "91%",
-        ramUsage: "3-4GB",
-        speed: "800-1200 contratos/hora",
-        idealFor: ["Máxima eficiencia", "Datos sensibles", "Memoria crítica"],
+        name: "Modo Rápido",
+        description: "Análisis básico con FinBERT para detección rápida de riesgos principales.",
+        precision: "88%",
+        ramUsage: "2-4GB",
+        speed: "Muy rápido",
+        idealFor: ["Análisis rápido", "Pocos recursos", "Revisión inicial"],
         icon: "Shield",
         color: "purple"
     }
@@ -68,74 +68,63 @@ export const MAC_APPROACHES: MacApproach[] = [
 
 export const PERFORMANCE_METRICS: PerformanceMetric[] = [
     {
-        approach: "Pipeline Optimizado",
-        contractsPerHour: "150-300",
+        approach: "Ollama + FinBERT",
+        contractsPerHour: "Rápido",
         ramUsed: "8-12GB",
         precision: "95%",
         timePerContract: "12-24s",
         color: "blue"
     },
     {
-        approach: "Stack Ligero",
-        contractsPerHour: "400-600",
-        ramUsed: "6-8GB",
-        precision: "93%",
-        timePerContract: "6-9s",
+        approach: "Solo FinBERT",
+        contractsPerHour: "Muy rápido",
+        ramUsed: "4-6GB",
+        precision: "90%",
+        timePerContract: "5-8s",
         color: "green"
     },
     {
-        approach: "Solo FinBERT",
-        contractsPerHour: "800-1200",
-        ramUsed: "3-4GB",
-        precision: "91%",
-        timePerContract: "3-5s",
-        color: "orange"
+        approach: "Modo Rápido",
+        contractsPerHour: "Ultra rápido",
+        ramUsed: "2-4GB",
+        precision: "88%",
+        timePerContract: "2-3s",
+        color: "purple"
     }
 ];
 
 export const MAC_FEATURES: MacFeature[] = [
     {
-        icon: "MemoryStick",
-        title: "Gestión Inteligente de Memoria",
-        description: "Monitoreo en tiempo real y optimización automática para Mac con 18GB RAM.",
-        details: [
-            "Monitoreo en tiempo real del uso de RAM",
-            "Limpieza automática entre análisis",
-            "Fallbacks automáticos según memoria disponible",
-            "Múltiples enfoques que se adaptan automáticamente"
-        ]
-    },
-    {
         icon: "Cpu",
-        title: "Optimización para Mac",
-        description: "Aprovecha Metal Performance Shaders (MPS) y optimizaciones específicas de Apple Silicon.",
+        title: "Ollama Local",
+        description: "Modelos de IA ejecutándose completamente en tu Mac, sin conexión a internet.",
         details: [
-            "MPS (Metal Performance Shaders) cuando disponible",
-            "Float16 para reducir uso de memoria",
-            "Low CPU memory usage activado por defecto",
+            "Modelos Llama ejecutándose localmente",
+            "Sin dependencia de internet",
+            "Datos nunca salen de tu Mac",
             "Optimizado para Apple Silicon"
         ]
     },
     {
         icon: "Shield",
-        title: "Seguridad y Privacidad",
-        description: "Análisis local primero con anonimización automática para datos sensibles.",
+        title: "FinBERT Especializado",
+        description: "Modelo especializado en análisis financiero para detectar riesgos específicos.",
         details: [
-            "Datos nunca salen de tu Mac por defecto",
-            "Anonimización automática antes de análisis externo",
-            "Consentimiento explícito para APIs externas",
-            "Patrones de anonimización para datos sensibles"
+            "Entrenado específicamente para finanzas",
+            "Detección de riesgos financieros",
+            "Análisis de sentimiento en contexto financiero",
+            "Extracción de entidades financieras"
         ]
     },
     {
-        icon: "Gauge",
-        title: "Tres Enfoques Adaptativos",
-        description: "Selección automática del mejor enfoque según memoria disponible y tipo de análisis.",
+        icon: "MemoryStick",
+        title: "Gestión de Memoria",
+        description: "Optimización automática para aprovechar al máximo tus 18GB de RAM.",
         details: [
-            "Pipeline Optimizado para máxima precisión",
-            "Stack Ligero para análisis en lote",
-            "Enfoque Híbrido para eficiencia máxima",
-            "Selección automática inteligente"
+            "Monitoreo en tiempo real de RAM",
+            "Tres modos según memoria disponible",
+            "Limpieza automática entre análisis",
+            "Adaptación automática al hardware"
         ]
     },
     {
@@ -284,76 +273,55 @@ export interface UseCase {
 export const PRACTICAL_FEATURES: PracticalFeature[] = [
     {
         icon: "FileText",
-        title: "Análisis Instantáneo",
-        description: "Sube cualquier contrato PDF, DOCX o TXT y obtén análisis completo en segundos.",
-        benefit: "Ahorra horas de revisión manual",
-        example: "Contrato de 50 páginas analizado en 2.3 segundos"
+        title: "Análisis con Ollama",
+        description: "Sube contratos y Ollama los analiza localmente usando modelos Llama.",
+        benefit: "Análisis completo sin internet",
+        example: "Llama 8B procesando contratos en tu Mac"
     },
     {
         icon: "Shield",
-        title: "Detección de Riesgos",
-        description: "Identifica automáticamente cláusulas problemáticas, tasas excesivas y términos desfavorables.",
-        benefit: "Protege tu empresa de riesgos ocultos",
-        example: "Detecta 6 riesgos críticos en un préstamo empresarial"
+        title: "Detección con FinBERT",
+        description: "FinBERT identifica riesgos financieros específicos en contratos.",
+        benefit: "Detección especializada en finanzas",
+        example: "FinBERT detectando cláusulas riesgosas"
     },
     {
-        icon: "TrendingUp",
-        title: "Comparación de Términos",
-        description: "Compara múltiples contratos lado a lado para encontrar las mejores condiciones.",
-        benefit: "Toma decisiones más informadas",
-        example: "Compara 5 ofertas de seguros en segundos"
+        icon: "Cpu",
+        title: "Tres Modos de Análisis",
+        description: "Modo completo (Ollama+FinBERT), solo FinBERT, o modo rápido.",
+        benefit: "Se adapta a tu memoria disponible",
+        example: "Cambio automático según RAM disponible"
     },
     {
-        icon: "Clock",
-        title: "Alertas de Vencimiento",
-        description: "Recibe notificaciones automáticas antes de que venzan contratos importantes.",
-        benefit: "Nunca pierdas fechas críticas",
-        example: "Recordatorio 30 días antes del vencimiento"
-    },
-    {
-        icon: "Users",
-        title: "Análisis Colaborativo",
-        description: "Comparte análisis con tu equipo y obtén comentarios en tiempo real.",
-        benefit: "Mejora la colaboración del equipo",
-        example: "5 analistas revisando el mismo contrato simultáneamente"
-    },
-    {
-        icon: "BarChart3",
-        title: "Reportes Ejecutivos",
-        description: "Genera reportes profesionales listos para presentar a directivos.",
-        benefit: "Comunica hallazgos de manera clara",
-        example: "Dashboard ejecutivo con métricas clave"
+        icon: "Home",
+        title: "Todo Local",
+        description: "Ningún dato sale de tu Mac, análisis completamente privado.",
+        benefit: "Máxima privacidad y seguridad",
+        example: "Contratos sensibles analizados localmente"
     }
 ];
 
 export const USE_CASES: UseCase[] = [
     {
-        scenario: "Banco Comercial",
-        problem: "Revisar 200 contratos de préstamos mensualmente",
-        solution: "Análisis automático en lote con detección de riesgos",
-        result: "Reducción del 80% en tiempo de revisión",
-        icon: "Building"
+        scenario: "Análisis Local",
+        problem: "Necesitas analizar contratos sin enviar datos a internet",
+        solution: "Ollama + FinBERT ejecutándose en tu Mac",
+        result: "Análisis completo y privado",
+        icon: "Home"
     },
     {
-        scenario: "Empresa de Seguros",
-        problem: "Validar pólizas contra regulaciones cambiantes",
-        solution: "Análisis de compliance automático",
-        result: "100% de cumplimiento regulatorio",
+        scenario: "Detección Rápida",
+        problem: "Identificar riesgos financieros en contratos",
+        solution: "FinBERT especializado en análisis financiero",
+        result: "Detección precisa de riesgos",
         icon: "Shield"
     },
     {
-        scenario: "Departamento Legal",
-        problem: "Revisar contratos de proveedores rápidamente",
-        solution: "Análisis instantáneo con alertas de riesgo",
-        result: "Decisiones 10x más rápidas",
-        icon: "Scale"
-    },
-    {
-        scenario: "Auditoría Interna",
-        problem: "Identificar contratos con términos desfavorables",
-        solution: "Detección automática de patrones problemáticos",
-        result: "Identificación de $2M en ahorros potenciales",
-        icon: "Search"
+        scenario: "Adaptación Automática",
+        problem: "Diferentes contratos requieren diferentes niveles de análisis",
+        solution: "Tres modos que se adaptan automáticamente",
+        result: "Óptimo uso de memoria y velocidad",
+        icon: "Cpu"
     }
 ];
 

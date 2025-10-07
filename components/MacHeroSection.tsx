@@ -44,15 +44,15 @@ export const MacHeroSection = forwardRef<HTMLElement, MacHeroSectionProps>(({ sc
 
                 {/* Animated title with typewriter effect */}
                 <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tighter mb-4 sm:mb-6 md:mb-8 bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent animate-gradient-x px-2 sm:px-0">
-                    <span className="inline-block animate-fade-in-up animation-delay-500">Analizador Mac</span>
+                    <span className="inline-block animate-fade-in-up animation-delay-500">Ollama</span>
                     <br />
-                    <span className="inline-block animate-fade-in-up animation-delay-1000">18GB RAM</span>
+                    <span className="inline-block animate-fade-in-up animation-delay-1000">+ FinBERT</span>
                 </h1>
                 
                 {/* Animated subtitle */}
                 <p className={`max-w-4xl mx-auto text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-300 mb-8 sm:mb-10 md:mb-14 px-3 sm:px-4 leading-relaxed transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
-                    Sistema completo de análisis de contratos financieros optimizado específicamente para Mac con 18GB de RAM. 
-                    Combina múltiples enfoques adaptativos para máxima precisión y eficiencia.
+                    Análisis de contratos financieros usando Ollama (modelos locales) y FinBERT (especializado en finanzas). 
+                    Todo ejecutándose en tu Mac, sin necesidad de internet.
                 </p>
                 
                 {/* Animated buttons */}
@@ -78,17 +78,17 @@ export const MacHeroSection = forwardRef<HTMLElement, MacHeroSectionProps>(({ sc
                             <MemoryStick size={24} className="text-orange-400" />
                         </div>
                         <div className="text-left">
-                            <p className="text-base font-semibold text-zinc-100">Gestión Inteligente</p>
-                            <p className="text-sm text-zinc-400">Memoria optimizada</p>
+                            <p className="text-base font-semibold text-zinc-100">Ollama Local</p>
+                            <p className="text-sm text-zinc-400">Modelos en tu Mac</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-4 bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-yellow-500/50 transition-all duration-300 hover:scale-105">
                         <div className="w-12 h-12 bg-yellow-600/30 rounded-xl flex items-center justify-center">
-                            <Cpu size={24} className="text-yellow-400" />
+                            <MemoryStick size={24} className="text-yellow-400" />
                         </div>
                         <div className="text-left">
-                            <p className="text-base font-semibold text-zinc-100">Apple Silicon</p>
-                            <p className="text-sm text-zinc-400">MPS optimizado</p>
+                            <p className="text-base font-semibold text-zinc-100">FinBERT</p>
+                            <p className="text-sm text-zinc-400">Especializado en finanzas</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-4 bg-zinc-900/60 border border-zinc-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:scale-105">
@@ -96,8 +96,8 @@ export const MacHeroSection = forwardRef<HTMLElement, MacHeroSectionProps>(({ sc
                             <Terminal size={24} className="text-blue-400" />
                         </div>
                         <div className="text-left">
-                            <p className="text-base font-semibold text-zinc-100">Instalación Automática</p>
-                            <p className="text-sm text-zinc-400">Un solo comando</p>
+                            <p className="text-base font-semibold text-zinc-100">Sin Internet</p>
+                            <p className="text-sm text-zinc-400">Análisis completamente local</p>
                         </div>
                     </div>
                 </div>
