@@ -60,7 +60,7 @@ const TechItem: React.FC<TechItemProps> = ({ icon, title, description, specs }) 
 
 export const TechnologySection = forwardRef<HTMLElement>((props, ref) => {
     return (
-        <section ref={ref} id="technology" className="py-24 sm:py-32">
+        <section ref={ref} id="technology" className="py-32 sm:py-40">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="bg-gradient-to-br from-zinc-900 via-blue-950/20 to-zinc-900 border border-zinc-800 rounded-3xl p-8 sm:p-16">
                     <div className="text-center max-w-3xl mx-auto mb-16">

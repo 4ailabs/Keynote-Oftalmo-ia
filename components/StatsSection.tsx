@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 
 export const StatsSection = forwardRef<HTMLElement>((props, ref) => {
     return (
-        <section ref={ref} id="stats" className="py-24 sm:py-32">
+        <section ref={ref} id="stats" className="py-32 sm:py-40">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="bg-gradient-to-br from-zinc-900 via-green-950/20 to-zinc-900 border border-zinc-800 rounded-3xl p-8 sm:p-16">
                     <div className="text-center max-w-3xl mx-auto mb-16">

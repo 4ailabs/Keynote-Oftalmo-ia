@@ -63,13 +63,17 @@ export const HeroSection = forwardRef<HTMLElement, HeroSectionProps>(({ scrollTo
                 </div>
             </div>
 
-            {/* Developer credit */}
-            <div className={`absolute top-4 right-4 sm:top-6 sm:right-6 text-zinc-600 text-xs transform transition-all duration-1000 delay-2000 ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0'}`}>
-                <span className="hidden sm:inline">Desarrollado por </span>
-                <a href="https://4ailabs.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-medium hover:text-blue-300 transition-colors duration-200 flex items-center gap-1">
-                    <Bot size={10} className="sm:w-3 sm:h-3 text-blue-400" />
-                    <span className="text-xs">4ailabs</span>
-                </a>
+            {/* 4ailabs branding */}
+            <div className={`absolute top-4 right-4 sm:top-6 sm:right-6 transform transition-all duration-1000 delay-2000 ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0'}`}>
+                <div className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-700 rounded-lg px-3 py-2">
+                    <div className="flex items-center gap-2 text-xs">
+                        <span className="text-zinc-400">Desarrollado por</span>
+                        <a href="https://4ailabs.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-semibold hover:text-blue-300 transition-colors duration-200 flex items-center gap-1">
+                            <Bot size={12} className="text-blue-400" />
+                            <span className="font-bold">4ailabs</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     );

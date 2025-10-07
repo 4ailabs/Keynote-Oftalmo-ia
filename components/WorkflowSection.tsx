@@ -53,7 +53,7 @@ const workflowSteps: WorkflowStepProps[] = [
 
 export const WorkflowSection = forwardRef<HTMLElement>((props, ref) => {
     return (
-        <section ref={ref} id="workflow" className="py-24 sm:py-32">
+        <section ref={ref} id="workflow" className="py-32 sm:py-40">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center max-w-4xl mx-auto mb-16">
                     <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-4">Pasos del Proceso de Análisis</h2>
