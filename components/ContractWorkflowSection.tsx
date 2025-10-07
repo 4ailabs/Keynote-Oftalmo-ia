@@ -1,6 +1,7 @@
 import React, { forwardRef, useEffect, useState, useRef } from 'react';
 import { Upload, Brain, BarChart3, Network, FileText, ArrowRight } from 'lucide-react';
 import { WORKFLOW_STEPS } from '../contract-constants';
+import { WorkflowDiagram } from './WorkflowDiagram';
 
 interface WorkflowStepProps {
     step: {
@@ -154,6 +155,11 @@ export const ContractWorkflowSection = forwardRef<HTMLElement>((props, ref) => {
                             <p className="text-sm text-zinc-400">Visualización de relaciones y dependencias</p>
                         </div>
                     </div>
+                </div>
+
+                {/* Workflow Diagram */}
+                <div className="mt-16">
+                    <WorkflowDiagram />
                 </div>
             </div>
         </section>

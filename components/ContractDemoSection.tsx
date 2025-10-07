@@ -1,5 +1,6 @@
 import React, { forwardRef, useEffect, useState } from 'react';
 import { Play, CheckCircle, AlertTriangle, FileText, Network, TrendingUp } from 'lucide-react';
+import { SystemArchitectureDiagram } from './SystemArchitectureDiagram';
 
 export const ContractDemoSection = forwardRef<HTMLElement>((props, ref) => {
     const [isVisible, setIsVisible] = useState(false);
@@ -170,6 +171,11 @@ export const ContractDemoSection = forwardRef<HTMLElement>((props, ref) => {
                             <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </button>
                     </div>
+                </div>
+
+                {/* System Architecture Diagram */}
+                <div className="mt-16">
+                    <SystemArchitectureDiagram />
                 </div>
             </div>
         </section>

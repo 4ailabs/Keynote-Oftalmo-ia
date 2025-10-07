@@ -1,6 +1,7 @@
 import React, { forwardRef, useEffect, useState, useRef } from 'react';
 import { AlertTriangle, Shield, Gavel, Settings, FileCheck } from 'lucide-react';
 import { RISK_CATEGORIES, SUPPORTED_CONTRACT_TYPES } from '../contract-constants';
+import { RiskAnalysisDiagram } from './RiskAnalysisDiagram';
 
 interface RiskCategoryProps {
     category: {
@@ -169,6 +170,11 @@ export const ContractRiskAnalysisSection = forwardRef<HTMLElement>((props, ref) 
                             </div>
                         ))}
                     </div>
+                </div>
+
+                {/* Risk Analysis Diagram */}
+                <div className="mt-16">
+                    <RiskAnalysisDiagram />
                 </div>
             </div>
         </section>

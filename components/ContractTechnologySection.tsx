@@ -1,6 +1,7 @@
 import React, { forwardRef, useEffect, useState, useRef } from 'react';
 import { Bot, TrendingUp, Network } from 'lucide-react';
 import { TECHNOLOGY_COMPONENTS } from '../contract-constants';
+import { TechnologyIntegrationDiagram } from './TechnologyIntegrationDiagram';
 
 interface TechnologyCardProps {
     name: string;
@@ -185,6 +186,11 @@ export const ContractTechnologySection = forwardRef<HTMLElement>((props, ref) =>
                             <p className="text-sm text-zinc-400">Detección avanzada de riesgos</p>
                         </div>
                     </div>
+                </div>
+
+                {/* Technology Integration Diagram */}
+                <div className="mt-16">
+                    <TechnologyIntegrationDiagram />
                 </div>
             </div>
         </section>
